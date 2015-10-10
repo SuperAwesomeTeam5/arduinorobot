@@ -42,8 +42,9 @@ void setup() {
 }
 
 void loop() {
-  uint8_t readbuf[3];
+  uint8_t readbuf[3],s1,s2,s3;
   int i = 0;
+  
   
   if( radio.available()){
                                                                   // Variable for the received timestamp
@@ -54,7 +55,7 @@ void loop() {
 /* PUT CODE HERE *//////////////////////
       s1 = readbuf[0]; // forwardback
       s2 = readbuf[1]; // pwm right
-      23 = readbuf[2];// pwm left
+      s3 = readbuf[2];// pwm left
     }
   }
 
